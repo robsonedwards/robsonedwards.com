@@ -1,19 +1,18 @@
 ---
 layout: default
-title: Robson Edwards
+title: robsonedwards.home
 ---
 
 <h1>Posts</h1>
 
 <div>
     {% for post in site.posts %}
-        <div>
-            <a href="{{ post.url }}">
-                <p>{{ post.date | date:"%b %-d, %Y" }}</p>
-                <h2>{{ post.title }}</h2>
-                <p>{{ post.excerpt | truncatewords: 32 }}</p>
-            </a>
-        </div>
+        <a href="{{ post.url }}" class="post-preview-text">
+                <span style="color:#262626">{{ post.title }}.</span>
+                <i>{{ post.date | date:"%b %-d, %Y" }}</i>
+                {{ post.excerpt | truncatewords: 32 }}
+        </a>
+        <br/>
     {% endfor %}
 </div>
 
@@ -30,5 +29,3 @@ title: Robson Edwards
     I am currently looking for opportunities in Fall 2019 and beyond where I 
     can add value and continue to expand my skill set.
 </p>
-
-<h3>Site under construction <i>(as of 7/28/19)</i></h3>

@@ -26,21 +26,21 @@
 <body>
     <!--<a id="skip-to-content" href="#content">Skip to the content.</a>-->
     <header class="page-header" role="banner">
-        <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-        <br/>
-        <!-- <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2> -->
-        
-        {% if site.show_downloads %}
-        <a href="" class="btn">Home</a>
-        <a href="" class="btn">Posts</a>
-        <a href="" class="btn">About</a>
+        <a href="/" class="btn">
+            <img src="/images/home-icon.png" height="32px" style="margin: -10px">
+        </a>
+        <a href="/posts" class="btn">Posts</a>
+        <a href="/about" class="btn">About</a>
         <a href="https://www.linkedin.com/in/robsonedwards/" class="btn">
-            <img src="linkedin-logo.png" height="32px" style="margin: -10px;">
+            <img src="/images/linkedin-logo.png" height="32px" style="margin: -10px;">
         </a>
         <a href="https://github.com/robsonedwards" class="btn">
-            <img src="github-logo-120.png" height="32px" style="margin: -10px;">
+            <img src="/images/github-logo-120.png" height="32px" style="margin: -10px;">
         </a>
-        <!--<a href="/cv.pdf" class="btn">CV/R&eacute;sum&eacute;</a>-->
+        
+        <h1 class="project-name">{{ page.title }}</h1>
+        {% if page.description %}
+            <h2 class="project-tagline">{{ page.description }}</h2>
         {% endif %}
     </header>
 

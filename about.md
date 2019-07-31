@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "robsonedwards.about"
+title: "about"
 ---
 	
 I'm passionate about creating elegant software systems using the latest 

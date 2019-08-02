@@ -8,11 +8,9 @@ title: home
 <div>
     {% for post in site.posts %}
         <a href="{{ post.url }}" class="post-preview">
-                <span style="color:#262626">{{ post.title }}.</span>
-                <i>{{ post.date | date:"%b %-d, %Y" }}</i>
-                <span style="margin: 100">
-                    {{ post.excerpt | truncatewords: 32 }}
-                </span>
+            <span style="color:#262626">{{ post.title }}.</span>
+            <i>{{ post.date | date:"%b %-d, %Y" }}</i>
+            {{ post.excerpt | truncatewords: 32 }}
         </a>
         <br/><br/>
     {% endfor %}

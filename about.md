@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "about"
+title: About
 ---
 	
 I'm passionate about creating elegant software systems using the latest 

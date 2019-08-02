@@ -5,10 +5,10 @@ title: "posts"
 <div>
     {% for post in site.posts %}
         <a href="{{ post.url }}" class="post-preview">
-            <span style="color:#262626">{{ post.title }}.</span>
+            <h2>{{ post.title }}</h2>
             <i>{{ post.date | date:"%b %-d, %Y" }}</i>
-            {{ post.excerpt | truncatewords: 64 }}
+            <p>{{ post.excerpt | truncatewords: 64 }}</p>
         </a>
-        <br/><br/>
+        <br/>
     {% endfor %}
 </div>

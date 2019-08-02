@@ -3,20 +3,20 @@ layout: default
 title: home
 ---
 
-<h1>Posts</h1>
+<a href="posts"><h1>Posts</h1></a>
 
 <div>
     {% for post in site.posts %}
         <a href="{{ post.url }}" class="post-preview">
             <span style="color:#262626">{{ post.title }}.</span>
             <i>{{ post.date | date:"%b %-d, %Y" }}</i>
-            {{ post.excerpt | truncatewords: 32 }}
+            <p>{{ post.excerpt | truncatewords: 32 }}</p>
         </a>
-        <br/><br/>
+        <br/>
     {% endfor %}
 </div>
 
-<h1>About Robson Edwards</h1>
+<a href="about"><h1>About Robson Edwards</h1></a>
 	
 <p> 
     I'm passionate about creating elegant software systems using the latest 

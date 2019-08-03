@@ -1,4 +1,16 @@
 title: Robson Edwards
 #description: 
 google_analytics:
-theme: jekyll-theme-cayman
+theme: minima
+
+minima:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  social_links:
+    # twitter: 
+    github:  robsonedwards
+    # rss: rss
+    # facebook: jekyll
+    # instagram: jekyll
+    linkedin: robsonedwards

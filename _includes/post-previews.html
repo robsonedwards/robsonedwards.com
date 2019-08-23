@@ -12,8 +12,16 @@
         {{ post.title | escape }}
         </a>
     </h3>
-    {{ post.excerpt | truncatewords:page.wordstotruncate }}
-    
+    {% if post.image %}
+        <div style="overflow: hidden; position: relative; height: 200px">
+            <a class="post-link" href="{{ post.url | relative_url }}">
+                <img src="{{ post.image }}" style="position: absolute; top: 0; bottom: 0; margin: auto">
+            </a>
+        </div>
+    {% endif %}
+    <p>
+        {{ post.excerpt | truncatewords:page.wordstotruncate }}
+    </p>
     </li>
     {%- endfor -%}
 </ul>

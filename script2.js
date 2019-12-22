@@ -46,11 +46,14 @@ function checkGuess(){
     else{
         guessCount++;
         lastResult.textContent = 'Wrong! ';
-        if(randomNumber < userGuess)
+        if(randomNumber < userGuess){
             lastResult.textContent += 'The last guess was too high!';
-        else
+            lastResult.style.backgroundColor = 'red';
+        }
+        else{
             lastResult.textContent += 'The last guess was too low!';
-        lastResult.style.backgroundColor = 'red';
+            lastResult.style.backgroundColor = 'orange';
+        }
     }
 
     guessField.value = '';

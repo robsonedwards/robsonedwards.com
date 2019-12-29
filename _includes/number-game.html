@@ -5,11 +5,16 @@
 <div class="numberGame">
     <h1>Number Guessing Game</h1>
     <p>Guess the number between 1 and 100!</p>
-    <div class="numberGameParagraphs" style="padding: 10px; border-radius: 5px">
-        <p class="guesses" style="margin-bottom:0px"> </p>
-        <input type="text" id="guessField" class="guessField" style="min-width: 200px; max-width:740px">
-            <!-- to do: make input field fill-->
+    <div class="numberGameParagraphs" style="padding: 10px; border-radius: 2px;
+            background-color: rgb(191, 191, 191)">
         <p class="lastResult" style="margin-bottom:0px"></p>
+        <p class="guesses" style="margin-bottom:0px"> </p>
+        <div class="guessFieldWrapper" style="background-color:
+         rgb(255, 255, 255, 0.5); padding: 5px; border-radius: 2px;">
+            <input type="text" id="guessField" class="guessField" 
+                style="width: 100%; display: block; background-color: 
+                    rgb(255,255,255,0); border-width: 0px">
+        </div>
     </div>
     <p class="highScore"></p>
 </div>

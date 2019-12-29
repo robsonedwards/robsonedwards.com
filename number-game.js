@@ -28,7 +28,7 @@ function resetGame(){
     guessField.value = '';
     guessField.focus();
 
-    paras.style.backgroundColor = '';
+    paras.style.backgroundColor = 'rgb(191, 191, 191)';
 }
 
 function checkGuess(){
@@ -44,11 +44,11 @@ function checkGuess(){
         guessCount++;
         lastResult.textContent = 'Wrong! ';
         if(randomNumber < userGuess){
-            lastResult.textContent += 'The last guess was too high!';
+            lastResult.textContent += 'Too high!';
             paras.style.backgroundColor = 'pink';
         }
         else{
-            lastResult.textContent += 'The last guess was too low!';
+            lastResult.textContent += 'Too low!';
             paras.style.backgroundColor = 'orange';
         }
     }

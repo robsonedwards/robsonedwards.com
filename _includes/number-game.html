@@ -11,9 +11,12 @@
         <p class="guesses" style="margin-bottom:0px"> </p>
         <div class="guessFieldWrapper" style="background-color:
          rgb(255, 255, 255, 0.5); padding: 5px; border-radius: 2px;">
-            <input type="text" id="guessField" class="guessField" 
+            <form action="#">
+            <input type="number" placeholder="Enter a guess" min="1" max="100"
+             id="guessField" class="guessField" 
                 style="width: 100%; display: block; background-color: 
                     rgb(255,255,255,0); border-width: 0px">
+            </form>
         </div>
     </div>
     <p class="highScore"></p>

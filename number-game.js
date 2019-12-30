@@ -3,6 +3,7 @@ const lastResult = document.querySelector('.lastResult');
 const highScorePara = document.querySelector('.highScore');
 const paras = document.querySelector('.numberGameParagraphs')
 
+const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
 
 let guessCount = 1;
@@ -24,6 +25,7 @@ function resetGame(){
     guesses.textContent = '';
     lastResult.textContent = '';
 
+    guessSubmit.disabled = false;
     guessField.disabled = false;
     guessField.value = '';
     guessField.focus();
@@ -62,6 +64,7 @@ function setGameOver(){
     '!';
     paras.style.backgroundColor = 'lightgreen';
 
+    guessSubmit.disabled = true;
     guessField.disabled = true;
     resetButton = document.createElement('button');
     resetButton.textContent = 'Start New Game';
@@ -84,3 +87,5 @@ guessField.addEventListener('keyup', function(event) {
         checkGuess();
     }
 }); 
+
+guessSubmit.addEventListener('click', checkGuess);
